@@ -6,26 +6,49 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prepare": "husky",
+    "lint": "ng lint",
+    "format": "prettier --write \"src/**/*.{md,html,css,scss,js,jsx,mjs,cjs,ts,tsx,json}\"",
+    "format-linux": "prettier --end-of-line lf --write \"src/**/*.{md,html,css,scss,js,jsx,mjs,cjs,ts,tsx,json}\""
   },
   "private": true,
+  "lint-staged": {
+    "*.{md,html,css,scss,js,jsx,mjs,cjs,ts,tsx,json}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,mjs,cjs,ts,tsx,json}": [
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
-    "@angular/animations": "^17.3.0",
-    "@angular/common": "^17.3.0",
-    "@angular/compiler": "^17.3.0",
-    "@angular/core": "^17.3.0",
-    "@angular/forms": "^17.3.0",
-    "@angular/platform-browser": "^17.3.0",
-    "@angular/platform-browser-dynamic": "^17.3.0",
-    "@angular/router": "^17.3.0",
+    "@angular-eslint/template-parser": "^18.3.1",
+    "@angular/animations": "^18.2.4",
+    "@angular/common": "^18.2.4",
+    "@angular/compiler": "^18.2.4",
+    "@angular/core": "^18.2.4",
+    "@angular/forms": "^18.2.4",
+    "@angular/material": "^18.2.3",
+    "@angular/platform-browser": "^18.2.4",
+    "@angular/platform-browser-dynamic": "^18.2.4",
+    "@angular/router": "^18.2.4",
+    "@ng-select/ng-select": "^13.7.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.6",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^3.4.11",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.7",
-    "@angular/cli": "^17.3.7",
-    "@angular/compiler-cli": "^17.3.0",
+    "@angular-devkit/build-angular": "^18.2.4",
+    "@angular-eslint/eslint-plugin": "^18.3.1",
+    "@angular-eslint/eslint-plugin-template": "^18.3.1",
+    "@angular/cli": "^18.2.4",
+    "@angular/compiler-cli": "^18.2.4",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
@@ -33,6 +56,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.3.3",
     "typescript": "~5.4.2"
   }
 }

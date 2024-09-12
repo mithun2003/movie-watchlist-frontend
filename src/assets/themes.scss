@@ -1,0 +1,88 @@
+@use "../../assets/style_variants/dark-theme" as dark;
+@use "../../assets/style_variants/light-theme" as light;
+
+.dark-mode {
+  @include dark.color-mixin();
+}
+
+.light-mode {
+  @include light.color-mixin();
+}
+
+:root {
+  .dark-mode {
+    --common-primary-color: #{dark.$common-primary-color};
+    --common-secondary-color: #{dark.$common-secondary-color};
+    --common-primary-bg-color: #{dark.$common-primary-bg-color};
+    --common-primary-font-color: #{dark.$common-primary-font-color};
+    --common-secondary-font-color: #{dark.$common-secondary-font-color};
+    --common-primary-border-color: #{dark.$common-primary-border-color};
+    --common-secondary-border-color: #{dark.$common-secondary-border-color};
+    --common-primary-icon-color: #{dark.$common-primary-icon-color};
+    --common-border-color: #{dark.$common-border-color};
+    --common-main-bg-color: #{dark.$common-main-bg-color};
+    --common-secondary-bg-color: #{dark.$common-secondary-bg-color};
+    --common-tertiary-bg-color: #{dark.$common-tertiary-bg-color};
+    --common-green-color: #{dark.$common-green-color};
+    --common-green-bg-color: #{dark.$common-green-bg-color};
+    --common-green-secondary-bg-color: #{dark.$common-green-secondary-bg-color};
+    --common-primary-blue-color: #{dark.$common-primary-blue-color};
+    --common-primary-blue-bg-color: #{dark.$common-primary-blue-bg-color};
+    --common-primary-blue-secondary-bg-color: #{dark.$common-primary-blue-secondary-bg-color};
+    --common-blue-color: #{dark.$common-blue-color};
+    --common-blue-bg-color: #{dark.$common-blue-bg-color};
+    --common-primary-red-color: #{dark.$common-primary-red-color};
+    --common-red-color: #{dark.$common-red-color};
+    --common-red-bg-color: #{dark.$common-red-bg-color};
+    --common-red-secondary-bg-color: #{dark.$common-red-secondary-bg-color};
+    --common-yellow-color: #{dark.$common-yellow-color};
+    --common-yellow-bg-color: #{dark.$common-yellow-bg-color};
+    --common-yellow-secondary-bg-color: #{dark.$common-yellow-secondary-bg-color};
+    --common-checkbox-border-color: #{dark.$common-checkbox-border-color};
+    --common-checkbox-bg-color: #{dark.$common-checkbox-bg-color};
+    --common-checkbox-check-color: #{dark.$common-checkbox-check-color};
+
+    --common-toast-green-color: #{dark.$common-toast-green-color};
+    --common-toast-red-color: #{dark.$common-toast-red-color};
+    --common-toast-blue-color: #{dark.$common-toast-blue-color};
+    --common-toast-yellow-color: #{dark.$common-toast-yellow-color};
+  }
+
+  .light-mode {
+    --common-primary-color: #{light.$common-primary-color};
+    --common-secondary-color: #{light.$common-secondary-color};
+    --common-primary-bg-color: #{light.$common-primary-bg-color};
+    --common-primary-font-color: #{light.$common-primary-font-color};
+    --common-secondary-font-color: #{light.$common-secondary-font-color};
+    --common-primary-border-color: #{light.$common-primary-border-color};
+    --common-secondary-border-color: #{light.$common-secondary-border-color};
+    --common-primary-icon-color: #{light.$common-primary-icon-color};
+    --common-border-color: #{light.$common-border-color};
+    --common-main-bg-color: #{light.$common-main-bg-color};
+    --common-secondary-bg-color: #{light.$common-secondary-bg-color};
+    --common-tertiary-bg-color: #{light.$common-tertiary-bg-color};
+    --common-green-color: #{light.$common-green-color};
+    --common-green-bg-color: #{light.$common-green-bg-color};
+    --common-green-secondary-bg-color: #{light.$common-green-secondary-bg-color};
+    --common-primary-blue-color: #{light.$common-primary-blue-color};
+    --common-primary-blue-bg-color: #{light.$common-primary-blue-bg-color};
+    --common-primary-blue-secondary-bg-color: #{light.$common-primary-blue-secondary-bg-color};
+    --common-blue-color: #{light.$common-blue-color};
+    --common-blue-bg-color: #{light.$common-blue-bg-color};
+    --common-primary-red-color: #{light.$common-primary-red-color};
+    --common-red-color: #{light.$common-red-color};
+    --common-red-bg-color: #{light.$common-red-bg-color};
+    --common-red-secondary-bg-color: #{light.$common-red-secondary-bg-color};
+    --common-yellow-color: #{light.$common-yellow-color};
+    --common-yellow-bg-color: #{light.$common-yellow-bg-color};
+    --common-yellow-secondary-bg-color: #{light.$common-yellow-secondary-bg-color};
+    --common-checkbox-border-color: #{light.$common-checkbox-border-color};
+    --common-checkbox-bg-color: #{light.$common-checkbox-bg-color};
+    --common-checkbox-check-color: #{light.$common-checkbox-check-color};
+
+    --common-toast-green-color: #{light.$common-toast-green-color};
+    --common-toast-red-color: #{light.$common-toast-red-color};
+    --common-toast-blue-color: #{light.$common-toast-blue-color};
+    --common-toast-yellow-color: #{light.$common-toast-yellow-color};
+  }
+}

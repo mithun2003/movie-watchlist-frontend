@@ -1,0 +1,39 @@
+@mixin color-mixin() {
+  //=========== App Colors ===========//
+  $common-primary-color: #2ba01a !global;
+  $common-secondary-color: #3ac126 !global;
+  $common-primary-bg-color: #f2fdf0 !global;
+  $common-primary-font-color: #2e1c1c !global;
+  $common-secondary-font-color: #6c6c6c !global;
+  $common-primary-border-color: #2ba01a40 !global;
+  $common-secondary-border-color: #3490f340 !global;
+  $common-primary-icon-color: #bdbdbd !global;
+  $common-border-color: #eaf1e8 !global;
+  $common-main-bg-color: #f5f9f8 !global;
+  $common-secondary-bg-color: #f2f6fe !global;
+  $common-tertiary-bg-color: #fafafa !global;
+  $common-green-color: #1a9b4d !global;
+  $common-green-bg-color: #f0fdf4 !global;
+  $common-green-secondary-bg-color: #d9f5e2 !global;
+  $common-primary-red-color: #f52828 !global;
+  $common-red-color: #c22a18 !global;
+  $common-red-bg-color: #fef3f2 !global;
+  $common-red-secondary-bg-color: #ffe6e4 !global;
+  $common-yellow-color: #ffab40 !global;
+  $common-yellow-bg-color: #fff7eb !global;
+  $common-yellow-secondary-bg-color: #ffebcc !global;
+  $common-primary-blue-color: #3490f3 !global;
+  $common-primary-blue-bg-color: #e3ecf4 !global;
+  $common-primary-blue-secondary-bg-color: #d9e8f5 !global;
+  $common-blue-color: #008080 !global;
+  $common-blue-bg-color: #f3f9fc !global;
+  $common-checkbox-border-color: #cbd4f0 !global;
+  $common-checkbox-bg-color: #eff3ff !global;
+  $common-checkbox-check-color: #597ef7 !global;
+
+  //Toast BG Color
+  $common-toast-green-color: #f0fdf4d6 !global;
+  $common-toast-red-color: #fef3f2d6 !global;
+  $common-toast-blue-color: #e3ecf4d6 !global;
+  $common-toast-yellow-color: #fff7ebd6 !global;
+}

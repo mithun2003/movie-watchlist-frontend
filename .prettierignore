@@ -1,0 +1,4 @@
+# Ignore artifacts:
+coverage
+.husky/pre-commit
+.husky/pre-push
